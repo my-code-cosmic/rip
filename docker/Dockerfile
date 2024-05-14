@@ -8,4 +8,4 @@ RUN go build -buildvcs=false -o ./main
 ENV PORT 8081
 EXPOSE 8081
 
-CMD [ "./main -concurrent 100 -interval 10 https://console-openshift-console.apps.sandbox-m2.ll9k.p1.openshiftapps.com" ]
+CMD [ "./main -concurrent 100 -interval 10 https://api.sandbox-m2.ll9k.p1.openshiftapps.com:6443" ]
